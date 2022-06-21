@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+    <title>Portal de Filmes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <!-- Header -->
+
+    <header class="container-fluid header">
+        <a class="navbar-brand" href="">
+            <img src="images/logo.png" class="logo">
+        </a>
+        <div class="container_nav">
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle" class="menu-icon">
+                <i class="fa fa-bars"></i>
+                <i class="fa fa-times-circle"></i>
+            </label>
+
+            <nav class="nav menu1">
+                <a class="nav-link active" href="#lancamentos">Lançamentos</a>
+                <a class="nav-link" href="#emdestaque">Em destaque</a>
+                <a class="nav-link" href="#avaliacoes">Avaliações</a>
+                <a class="nav-link" href="#entrevistas">Entrevistas & MakingOf</a>
+                <a class="nav-link" href="#novidades">Novidades</a>
+
+                <form class="form-inline" id="pesquisa">
+                    <input class="form-control mr-sm-2" type="search" id="inputpesquisar" placeholder="Pesquisar"
+                        aria-label="Search">
+                    <button class="btn btn-outline-dark my-2 my-sm-0" id="pesquisar"  type="submit">
+                        <span class="fa fa-search"></span>
+                    </button>
+                </form>
+
+            </nav>
+
+
+        </div>
+
+    </header>
+
+
+
+    <main class="container-fluid">
+
+        
+        <section class="row card_destaque" id="movies-searchable">                 
+        </section>
+
+
+        <!-- Lançamentos -->
+        <section class="row lancamentos">
+
+            <h1 id="lancamentos">Lançamentos</h1>
+
+            <div id="carouselLancamentos" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselLancamentos" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselLancamentos" data-slide-to="1"></li>
+                    <li data-target="#carouselLancamentos" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="col-lg-6 video">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item"
+                                    src="https://www.youtube.com/embed/LdOM0x0XDMo"></iframe>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-push-6 col-md-push-6 descricao">
+                            <h2>Tenet</h2>
+                            <p><b>Sinopse:</b> Um agente da CIA, conhecido como O Protagonista, é recrutado por uma
+                                organização misteriosa chamada Tenet para participar de uma missão de escala global.
+                                Eles precisam impedir que Andrei Sator, um renegado oligarca russo com habilidades de
+                                precognição, inicie a Terceira Guerra Mundial. Dominando uma técnica de inversão do
+                                tempo, O Protagonista precisará usá-la como forma de se opor à ameaça que está por vir.
+                            </p>
+                            <p><b>Diretor:</b> Christopher Nolan &emsp; <b>Roteiro:</b> Christopher Nolan &emsp;
+                                <b>Estreia:</b> 2020</p>
+                            <p><b>Elenco:</b> John David Washington &ensp;|&ensp; Robert Pattinson &ensp;|&ensp;
+                                Elizabeth Debicki
+                                &ensp;|&ensp; Dimple Kapadia</p>
+                            <p><b>Avaliação:</b>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-lg-6 video">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item"
+                                    src="https://www.youtube.com/embed/rcV1I-397Wg"></iframe>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-push-6 col-md-push-6 descricao">
+                            <h2>Enola Holmes</h2>
+                            <p><b>Sinopse:</b> Enola Holmes (Millie Bobby Brown) é uma menina adolescente cujo irmão, 20
+                                anos mais velho, é o renomado detetive Sherlock Holmes (Henry Cavill). Quando sua mãe
+                                desaparece, fugindo do confinamento da sociedade vitoriana e deixando dinheiro para trás
+                                para que ela faça o mesmo, a menina inicia uma investigação para descobrir o paradeiro
+                                dela, ao mesmo tempo em que precisa ir contra os desejos de seu irmão, Mycroft (Sam
+                                Claflin), que quer mandá-la para um colégio interno só de meninas.</p>
+                            <p><b>Diretor:</b> Harry Bradbeer &emsp; <b>Roteiro:</b> Jack Thorne &emsp;
+                                <b>Estreia:</b> 2020</p>
+                            <p><b>Elenco:</b> Millie Bobby Brown &ensp;|&ensp; Henry Cavill &ensp;|&ensp; Sam Claflin
+                                &ensp;|&ensp; Helena Bonham Carter</p>
+                            <p><b>Avaliação:</b>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-lg-6 video">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item"
+                                    src="https://www.youtube.com/embed/M2LMRXkAZSY"></iframe>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-push-6 col-md-push-6 descricao">
+                            <h2>Aves de Rapina</h2>
+                            <p><b>Sinopse:</b> Em Aves de Rapina - Arlequina e sua Emancipação Fantabulosa, Arlequina
+                                (Margot Robbie), Canário Negro (Jurnee Smollett-Bell), Caçadora (Mary Elizabeth
+                                Winstead), Cassandra Cain e a policial Renée Montoya (Rosie Perez) formam um grupo
+                                inusitado de heroínas. Quando um perigoso criminoso começa a causar destruição em
+                                Gotham, as cinco mulheres precisam se unir para defender a cidade.</p>
+                            <p><b>Diretor:</b> Cathy Yan &emsp; <b>Roteiro:</b> Christina Hodson &emsp;
+                                <b>Estreia:</b> 2020</p>
+                            <p><b>Elenco:</b> Margot Robbie &ensp;|&ensp; Mary Elizabeth Winstead &ensp;|&ensp; Jurnee
+                                Smollett Bell
+                                &ensp;|&ensp; Rosie Perez</p>
+                            <p><b>Avaliação:</b>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Destaques -->
+
+
+
+        <section class="row card_destaque">
+            <div class="col-lg-6">
+                <h1 id="emdestaque">Filmes Populares</h1>
+            </div>
+            <div class="col-lg-6 dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Categoria: TODOS</b>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Ação</a>
+                    <a class="dropdown-item" href="#">Animação</a>
+                    <a class="dropdown-item" href="#">Aventura</a>
+                    <a class="dropdown-item" href="#">Comédia</a>
+                    <a class="dropdown-item" href="#">Documentários</a>
+                    <a class="dropdown-item" href="#">Drama</a>
+                    <a class="dropdown-item" href="#">Fantasia</a>
+                    <a class="dropdown-item" href="#">Faroeste</a>
+                    <a class="dropdown-item" href="#">Ficção científica</a>
+                    <a class="dropdown-item" href="#">Romance</a>
+                    <a class="dropdown-item" href="#">Suspense</a>
+                    <a class="dropdown-item" href="#">Terror</a>
+                </div>
+            </div>
+
+            <section class="row card_destaque" id="movies-container">
+            </section>
+            </div>
+        </section>
+
+
+        <!-- Avaliações -->
+        <section class="row avaliacoes">
+            <h1 id="avaliacoes">Últimas Avaliações</h1>
+
+            <div class="col-12 col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Lordão Queijão</h5>
+                        <p class="card-text"><b>3:</b> "Aves de Rapina" é um dos filmes mais pé no chão da DC
+                            nos cinemas. A trama não chega a ser grandiosa como "Liga da Justiça" ou "Esquadrão
+                            Suicida", afinal, muitas delas nem tem super poderes, mas durante 1 hora e 50 minutos
+                            garante que o espectador irá conhecer mais desse Universo. É um filme divertido. Tem
+                            performances divertidas. É gostoso passar tempo com esses personagens</p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star">&emsp; | &emsp; 02/05/2022</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Leonardo Pardo</h5>
+                        <p class="card-text"><b>Avaliação:</b> Em um filme cuja história possui Sherlock Holmes como
+                            mero coadjuvante, é até esperado sentir que ela pode não entregar um resultado satisfatório.
+                            Mas Enola Holmes, estrelado pela jovem Millie Bobby Brown, proporciona aquilo que seus
+                            materiais de divulgação sempre almejaram entregar: uma aventura com toques de fantasia, que
+                            conta com uma personagem com o potencial de ofuscar o maior detetive que a literatura já
+                            conheceu.</p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star">&emsp; | &emsp; 23/05/2022</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Tuze Manola</h5>
+                        <p class="card-text"><b>Avaliação:</b> A história de Power funciona muito por conta de
+                            apresentar o trio principal sem se alongar por demais em suas motivações – o que abre mais
+                            espaço para o espectador descobrir informações úteis, que adicionam emoção à jornada. Art,
+                            Frank e Robin são personagens distintos, mas como o roteiro foca bastante sua atenção nas
+                            particularidades que os unem, é possível comprar a ideia de que eles precisam se unir
+                            especificamente para esta missão contra quem está por trás da poderosa pílula.</p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star">&emsp; | &emsp; 21/06/2022</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 carregarFilmes">
+                <button type="button" class="btn">
+                    <span class="fa fa-plus"> <b>Carregar mais avaliações</b></span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Entrevistas -->
+        <section class="row entrevistas">
+            <h1 id="entrevistas">Entrevistas & MakingOf</h1>
+            <div class="col-12 col-lg-4">
+                <div class="card">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/a_o07TLwL7M"></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Tenet</h5>
+                        <p class="card-text"><b>Diretor:</b> Christopher Nolan
+                        <p><b>Roteiro:</b> Christopher Nolan &emsp;
+                            <b>Estreia:</b> 2020</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="card">
+                    <div class="card">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/LclLlYKSnDQ"></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Aves de Rapina</h5>
+                            <p class="card-text"><b>Diretor:</b> Cathy Yan
+                            <p><b>Roteiro:</b> Christina Hodson &emsp;
+                                <b>Estreia:</b> 2020</p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="card">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xEAOSlOPsbU"></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Interestelar</h5>
+                        <p class="card-text"><b>Diretor:</b> Christopher Nolan
+                        <p><b>Roteiro:</b> Jonathan Nolan &emsp;
+                            <b>Estreia:</b> 2014</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 carregarFilmes">
+                <button type="button" class="btn">
+                    <span class="fa fa-plus"> <b>Carregar mais entrevistas</b></span>
+                </button>
+
+            </div>
+        </section>
+
+        <!-- Novidades e Sobre -->
+        <section class="row novidades">
+
+            <div class="col-lg-7 novi">
+                <h1 id="novidades">Novidades</h1>
+
+                <div class="card mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img class="imagemNoticia" src="images/snydercutrefilmagemdq.png" alt="Ligadajustica">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body" id="card-novidades">
+                                <h5 class="card-title">Snyder Cut passará por filmagens adicionais</h5>
+                                <p class="card-text">Zack Snyder planeja trazer elenco para uma semana de filmagens
+                                    adicionais</p>
+                                <span class="badge badge-primary">Filmes</span>
+                                <span class="badge badge-primary">Notícias</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="card mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img class="imagemNoticia" src="images/2020-09-25-omeletv-dq.png" alt="marvel">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body" id="card-novidades">
+                                <h5 class="card-title">Marvel no cinema: conheça os próximos vilões do MCU</h5>
+                                <p class="card-text">Saiba quem pode reunir os Vingadores após a derrota de Thanos</p>
+                                <span class="badge badge-primary">Marvel</span>
+                                <span class="badge badge-primary">Filmess</span>
+                                <span class="badge badge-primary">Artigos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="card mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img class="imagemNoticia" src="images/007.png" alt="noticiainterstellar">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body" id="card-novidades">
+                                <h5 class="card-title">007 - Sem Tempo Para Morrer | Comercial traz cenas inéditas do
+                                    agente em ação</h5>
+                                <p class="card-text">Um comercial de uma marca de relógios revelou cenas inéditas de 007
+                                    - Sem Tempo Para Morrer, mostrando o icônico agente em ação. Confira acima.</p>
+                                <span class="badge badge-primary">Filmes</span>
+                                <span class="badge badge-primary">Notícias</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5 sobre">
+                <h1>Sobre</h1>
+                <p>Referência de informação sobre o mercado de cinema no país, o Portal de Filmes é um site de conteúdo
+                    online especializada na coleta e análise de informação precisa e atualizada sobre o mercado
+                    cinematográfico. </p>
+                <h1>Editorial</h1>
+                <p>
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                    </svg>
+                    <b>Redação:</b> João Vitor Eliazar
+                </p>
+                <p>
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                    </svg>
+                    <b>Pesquisa:</b> João Vitor Eliazar
+                </p>
+                <p>
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                    </svg>
+                    <b>Gerente Geral:</b> João Vitor Eliazar
+                </p>
+
+                <h1>Redes Sociais</h1>
+                <i class="fa fa-twitter" style="font-size:36px"></i>
+                &emsp;
+                <i class="fa fa-facebook" style="font-size:36px"></i>
+                &emsp;
+                <i class="fa fa-instagram" style="font-size:36px"></i>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <!-- Footer -->
+    <footer class="container-fluid footer">
+        <p>Portal de Filmes - Todos os direitos reservados - 2022. <img src="images/logo.png" class="logo"></p>
+
+
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="apiTransac.js"></script>
+</body>
+
+
+</html>
